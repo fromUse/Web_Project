@@ -8,4 +8,4 @@ Demand :
  5. 考核科目，考核教室选线新建数据表存储，在user_kaochang.php中对应字段导成下拉菜单
  6. 在相册预览页面实现相册预览，对应的图片路径在user表中u_thumb_image字段中
 
-Note : <a href="http://172.30.87.177:8080/kaoshi01.zip">kaoshi01.zip</a>
+数据库 : <a href="http://172.30.87.177:8080/kaoshi01.zip">kaoshi01.zip</a>
