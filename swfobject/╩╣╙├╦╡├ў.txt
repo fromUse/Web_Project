@@ -1,0 +1,84 @@
+<div id="flashs"></div>
+<script type="text/javascript" src="swfobject/swfobject.js"></script>
+<script type="text/javascript">swfobject.embedSWF("vcastr.swf?vcastr_file=Video_1.flv","flash","400","300","9.0.0","expressInstall.swf");</script>
+
+用法：
+html部分
+<div id="swf1">......</div>
+js部分   
+swfobject.embedSWF("test.swf", "swf1", "300", "120", "9.0.0",);
+
+源码部分：
+这是2.2中的源码。看参数就明白怎么使用了。
+embedSWF: function(swfUrlStr, replaceElemIdStr, widthStr, heightStr, swfVersionStr, xiSwfUrlStr, flashvarsObj, parObj, attObj, callbackFn) {
+
+....}
+
+详解
+首先需要了解object标签。
+http://www.w3school.com.cn/tags/tag_object.asp
+http://www.w3school.com.cn/tags/tag_param.asp
+
+swfUrlStr, replaceElemIdStr, widthStr, heightStr, swfVersionStr, xiSwfUrlStr
+这些依次为，swf位置，html要替换成flash的元素的id，宽，高，flash版本，如果没有flash那就使用这个自动安装flash的文件 swfobject2.2源文件里有
+
+
+
+flashvarsObj：这里是flashvars的值。这个常用来作为html与flash之间传递参数，本来是在params对象中的属性，由于考虑到常用和方便，所以单独取了出来。可以设置为null。然后在param中写。
+
+param对象的属性:
+详细的介绍http://kb2.adobe.com/cps/127/tn_12701.html
+play，loop，menu，quality，scale，salign，bgcolor，base，swliveconnect，flahvars，devicefont ，allowscriptaccess ，seamlesstabbing ，allowfullscreen ，allownetworking
+wmode     这个很重要，window，opaque，transparent（一般设为transparent透明或者opaque不透明）。当不设置时默认为window，这时已窗口方式呈现。这时object元素将始终显示在最上面，同时点击事件等也监听不到。
+
+attributes对象的属性：id，name，styleclass（不使用class，因为class也是ECMA4的保留关键字），align
+
+callbackFn：回调函数
+
+
+
+
+
+
+
+使用演示
+演示1
+
+swfobject.embedSWF("test6_flashvars.swf", "content5", "300", "120", "6.0.0", "expressInstall.swf", {name1:"hello",name2:"world",name3:"foobar"}, {menu:"false"}, {id:"dynamicContent5",name:"dynamicContent5"}); 
+演示2
+
+var flashvars = { 
+
+  name1: "hello", 
+
+  name2: "world", 
+
+  name3: "foobar" 
+
+}; 
+
+var params = { 
+
+  menu: "false" 
+
+}; 
+
+var attributes = { 
+
+  id: "dynamicContent2", 
+
+  name: "dynamicContent2" 
+
+}; 
+
+swfobject.embedSWF("test6_flashvars.swf", "content2", "300", "120", "6.0.0", "expressInstall.swf", flashvars, params, attributes); 
+演示3
+
+var flashvars = {};  <br>flashvars.xmlPath = "data.xml";  <br>var params = {};  <br>params.wmode = "transparent";  <br>var attributes = {};  <br>swfobject.embedSWF("xixi.swf","banner","960","250","9.0.0","expressInstall.swf",flashvars,params,attributes);<br> 
+演示4
+
+swfobject.embedSWF("gen_shu.swf", "gen_swf1", "180", "105", "9.0.0",null,null,{wmode:"transparent"},null,function(){alert("已加载成功flash")}); 
+
+js调用方法
+
+http://code.google.com/p/swfobject/wiki/api

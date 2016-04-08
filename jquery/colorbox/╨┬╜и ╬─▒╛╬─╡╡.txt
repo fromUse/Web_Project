@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="jquery/colorbox/colorbox.css" type="text/css" />
+<script type="text/javascript" src="jquery/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery/colorbox/jquery.colorbox.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".group1").colorbox({rel:'group1'});
+	$("#click").click(function(){ 
+		$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+		return false;
+	});
+});
+</script>
+
+<p><a class="group1" href="../content/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee.">Grouped Photo 1</a></p>
+<p><a class="group1" href="../content/ohoopee2.jpg" title="On the Ohoopee as a child">Grouped Photo 2</a></p>
+<p><a class="group1" href="../content/ohoopee3.jpg" title="On the Ohoopee as an adult">Grouped Photo 3</a></p>

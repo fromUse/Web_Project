@@ -1,0 +1,15 @@
+﻿ 
+#mproducts {
+	float:right;
+	width:100%px; font-size:90%;
+}
+#titlepp{ height:25px; line-height:25px; width:100%; text-align:center; border-bottom:1px dashed #999;}
+#mmproducts{ width:100%}
+#mmproducts select{ width:50%;}
+#mmproducts input{ width:43%; height:25px; line-height:25px; padding:0 10px;}
+
+#mproducts p{ float:left; height:30px; line-height:30px; font-size:80%;
+	width:100%px;
+}
+ .cls{ clear:both}
+ 

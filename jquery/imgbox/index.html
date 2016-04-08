@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="JS代码,imgbox,jquery插件,lightbox,图片展示,JS图片特效,JS广告代码，JS常用代码" />
+<meta name="description" content="简单实用的lightbox风格的图片浏览jquery插件imgbox，更多imgbox,jquery插件,lightbox,图片展示代码请访问脚本之家JS代码频道。" />
+<title>简单实用的lightbox风格的图片浏览jquery插件imgbox_脚本之家</title>
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="imgbox/jquery.imgbox.pack.js"></script>
+	<link rel="stylesheet" href="imgbox/imgbox.css" />
+	<style type="text/css">
+		#images a {
+			margin-right: 14px;
+		}
+
+		#images a img {
+			border: 1px solid #888;	
+			padding: 3px;
+			vertical-align: top;
+		}
+
+		#credit {
+			clear: both;	
+			margin-top: 50px;
+			padding-top: 20px;
+			font-size: 10px;
+			border-top: 1px solid #BBB;
+			font-family: Verdana;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#example1-1").imgbox();
+
+			$("#example1-2").imgbox({
+			    'zoomOpacity'	: true,
+				'alignment'		: 'center'
+			});
+
+			$("#example1-3").imgbox({
+				'speedIn'		: 0,
+				'speedOut'		: 0
+			});
+
+			$("#example2-1, #example2-2").imgbox({
+				'speedIn'		: 0,
+				'speedOut'		: 0,
+				'alignment'		: 'center',
+				'overlayShow'	: true,
+				'allowMultiple'	: false
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="content">
+		<h1>imgBox</h1>
+
+		<p>This is a demo page. You can view the supporting article <a href="http://jqueryglobe.com/article/imgbox">here</a><br />
+
+</p>
+
+		<hr />
+
+		<div id="images">
+		
+			<a id="example1-1" title="" href="http://farm4.static.flickr.com/3498/4006876523_289a8296ee.jpg"><img alt="" src="http://farm4.static.flickr.com/3498/4006876523_289a8296ee_m.jpg" /></a>
+			<a id="example1-2" title="Lorem ipsum dolor sit amet" href="http://farm4.static.flickr.com/3068/3096463741_67b9979fd4.jpg"><img alt="" src="http://farm4.static.flickr.com/3068/3096463741_67b9979fd4_m.jpg" /></a>
+			<a id="example1-3" title="Maecenas eros massa, pulvinar et sagittis adipiscing, &lt;br /&gt; molestie et arcu" href="http://farm3.static.flickr.com/2642/4003912116_389c3891cf.jpg"><img alt="" src="http://farm3.static.flickr.com/2642/4003912116_389c3891cf_m.jpg" /></a>
+			
+			<a id="example2-1" title="" href="http://farm4.static.flickr.com/3460/3793633187_44790d1f0a_o.jpg"><img alt="" src="http://farm4.static.flickr.com/3460/3793633187_f56bb1bf99_m.jpg" /></a>
+			<a id="example2-2" title="Maecenas eros massa, pulvinar et sagittis adipiscing, molestie et arcu" href="http://farm4.static.flickr.com/3456/3793633099_3e1e53e4ac_o.jpg"><img alt="" src="http://farm4.static.flickr.com/3456/3793633099_4f9c3e08b3_m.jpg" /></a>
+
+		</div>
+		
+		<div id="credit">
+			Photo Credit: <a href="http://www.flickr.com/photos/hazrulabdulhalim/">Hazrul Abdul Halim</a>
+		</div>
+	</div>
+
+<div style="text-align:center; clear:both; margin:5px auto">
+<p>代码整理：<a href="http://www.jb51.net/" target="_blank">脚本之家</a>　更多相关效果，请到脚
+本之家 <a href="http://www.jb51.net/jiaoben/guanggao1.html" target="_blank">脚本下载</a>栏目
+</p>
+      <p>＊尊重他人劳动成果，转载请自觉注明出处！注：此代码仅供学习交流，请勿用于商业用途。</p>
+      <p><a href="http://sc.jb51.net" target="_blank">脚本之家素材中心</a>整理。</p>
+  <p><script src="/js/js-preview-728x90.js"></script><br /><br /><br /><center><script 
+src="/js/tj.js"></script></center></p>
+</div>
+</body>
+</html>

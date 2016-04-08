@@ -1,0 +1,9 @@
+<script type="text/JavaScript" src="jquery/jquery-1.4.2.js"></script>
+<script type="text/JavaScript" src="jquery/cloud-zoom/cloud-zoom.1.0.1.min.js"></script>
+<link href="jquery/cloud-zoom/cloud-zoom.css" type="text/css" rel="stylesheet" />
+
+<a href="<%=p_Image%>" class="cloud-zoom" id="zoom1" rel="smoothMove:5,zoomWidth:auto,adjustX:10,adjustY:-4" title="<%=p_Name%>" target="_blank"><img src="<%=p_Image%>" width="<%=ImageWidth%>" height="<%=ImageHeight%>" /></a>
+
+<a href='/images/zoomengine/bigimage00.jpg' class='cloud-zoom-gallery' title='Thumbnail 1' rel="useZoom: 'zoom1', smallImage: '/images/zoomengine/smallimage.jpg' "> <img src="/images/zoomengine/tinyimage.jpg" alt = "Thumbnail 1"/></a>
+<a href='/images/zoomengine/bigimage01.jpg' class='cloud-zoom-gallery' title='Thumbnail 2' rel="useZoom: 'zoom1', smallImage: ' /images/zoomengine/smallimage-1.jpg'"><img src="/images/zoomengine/tinyimage-1.jpg" alt = "Thumbnail 2"/></a>
+<a href='/images/zoomengine/bigimage02.jpg' class='cloud-zoom-gallery' title='Thumbnail 3' rel="useZoom: 'zoom1', smallImage: '/images/zoomengine/smallimage-2.jpg' "> <img src="/images/zoomengine/tinyimage-2.jpg" alt = "Thumbnail 3"/></a> 
